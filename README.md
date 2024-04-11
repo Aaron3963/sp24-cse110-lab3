@@ -1,1 +1,1 @@
-# Lab 2 - Starter
+## [Link to Lab2 webpage](aaron3963.github.io/CSE110-Lab2/)
