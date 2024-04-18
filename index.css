@@ -1,0 +1,218 @@
+:root {
+    /* Color 2 */
+    --HD-yellow: #FFE80A;
+  }
+
+@media (max-width: 750px) {
+    .items {
+        flex-direction: column;
+        width: 60%;
+    }
+}
+
+/* Universal selector */
+*.item{
+    background-color: hsl(0, 0%, 35%);
+}
+
+body {
+
+    background-color: hsl(0, 0%, 25%);;
+}
+
+.top-bar {
+    text-align: center;
+    
+    /* Position 1 */
+    position: static;
+
+    /* Relative unit #1 */
+    width: 75%;
+
+    /* Fall back var */
+    background-color: var(--HD-yellow);
+
+
+    /* 3rd Font */
+    font-family: "Jersey 20", sans-serif;
+
+    /* Long Boarder */
+    border-style: solid;
+        /* Color 1 */
+    border-color: rgb(0,0,0);
+    border-width: 5px;
+    border-radius: 10px;
+
+    /* Long Margin */
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    /* Long Padding */
+    /* Absolute Unit x3 */
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+
+    /* Color 5 */
+    /* Text color */
+    color: color(srgb 0 0 0);
+}
+
+/* Active element */
+.top-bar:active {
+    box-shadow: 10px 20px 50px var(--HD-yellow);
+  }
+
+.title {
+    /* Text decorate */
+    text-decoration: underline overline;
+    /* Text align */
+    text-align: center;
+    /* display #2 */
+    display: block;
+}
+
+/* Small date size */
+.date {
+    /* Relative Unit #2 */
+    font-size: 0.75em;
+    /* Color 6 */
+    color: color-mix(in srgb, black 50%, grey 50%);
+
+    /* display #1 */
+    display: inline;
+}
+
+
+/* Display flexbox */
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-content: center;
+    justify-content: center; 
+    align-items: center;
+    margin: auto;
+}
+
+.item {
+    /* Size */
+    /* Relative unit #3 */
+    width: 100%;
+    height: 100%;
+    /* max-width: 20%;
+    max-height: 100%; */
+
+    /* Short margin */
+    margin: 10px 10px 10px 10px;
+
+    /* Short boarder */
+    border: 2px dashed var(--HD-yellow) ;
+    border-radius: 5px;
+
+    /* Short padding */
+    padding: 1% 1% 1% 1%;
+
+    flex-basis: calc(33% - 20px);
+}
+
+/* Hovering */
+.item :hover{
+    /* Color 4 */
+    background-color: gold;
+}
+
+.Agenda ol{
+    display: grid;
+
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+}
+
+.diagram{
+    margin: auto;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h3 {
+    margin: auto;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: 0.2px rgb(255, 230, 4);
+    text-shadow: 0 2px 2px rgb(255, 230, 4); /* Cool shadow effect */
+}
+
+
+/* Descendent */
+picture img { 
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    height: auto;
+}
+
+.media {
+    position: relative;
+    bottom: -20px;
+
+    width: 40%;
+    margin: 100px auto 10px auto;
+}
+
+/* ID selector */
+#noTask {
+    color: green;
+}
+
+.Motto{
+    text-align: center;
+}
+
+/* Descendent selector*/
+.Motto > p{
+    width: 95%;
+
+    color: var(--HD-yellow);
+    font-size: 70px;
+}
+
+/* Sibling selector */
+p ~ h3{
+    font-size: 12px;
+    text-align: right;
+}
+
+/* Adjacent Sibling selector */
+.Motto > p + h3 {
+    color: rgb(37, 138, 201);
+  }
+
+/* Combined selector */
+p.DEMOCRACY {
+    text-decoration: underline;
+}
+
+/* New selector */
+h2:has(+ h3) { 
+    color: orange;
+    margin: 50px 0 0.25rem 0;
+  }
+
+/* Nested selector */
+.Motto > p {
+    & > a{
+        text-decoration: overline;
+    }
+}

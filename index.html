@@ -3,49 +3,76 @@
   <head>
     <title>CodeDivers</title>
     <link rel="icon" type="image/x-icon" href="https://aaron3963.github.io/CSE110-Lab2/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
   </head>
+  <style>
+    html {
+    font-size: 16px;
+    color: white;
+  }
+  </style>
   <body>
-    <h1>CodeDivers' First Meeting</h1>
-    <h3>Date: 2024/04/10</h3>
-    <h3>Attendance</h3>
-    <ul>
-        <li>😅: Present</li>
-        <li>👽: On Zoom</li>
-        <li>🤓: Absent</li>
-    </ul>
-    <h3>Agenda</h3>
-    <ol>
-        <li>Check-ins</li>
-        <li>Project overview</li>
-        <li>Brainstorming</li>
-        <li>Voting for ideas</li>
-        
-    </ol>
-    <h3>Leftovers from last  time</h3>
-        None. This is our first meeting.
+    <div class="top-bar">
+        <!-- In line CSS -->
+        <h1 class="title" style="font-size: 50px;">CodeDivers' First Meeting</h1>
+        <div class="date">Date: 2024/04/10</div>
+    </div>
 
-    <h3>Important things to talk about next time</h3>
-        <b>Assign</b> <strong>responsibilities</strong>
+    <div class="items">
+    <div class="item Attendance">
+        <h3>Attendance</h3>
+        <ul id="attList">
+            <li>😅: Present</li>
+            <li>👽: On Zoom</li>
+            <li>🤓: Absent</li>
+        </ul>
+    </div>
 
-    <h3>Questions & Concerns</h3>
-        👽 points out he <i>might be</i> absent on campus the whole quarter.
+    <div class="item Agenda">
+        <h3>Agenda</h3>
+        <ol>
+            <li>Check-ins</li>
+            <li>Project overview</li>
+            <li>Brainstorming</li>
+            <li>Voting for ideas</li>
+            
+        </ol>
+    </div>
     
-    <h3>Diagrams we presented</h3>
-    <picture>
-        <img src="img.jpg" width="640" alt="It's just some random picture online">
-    </picture>
+    <div class="item leftover">
+        <h3>Leftovers from last  time</h3>
+            <div id="noTask">None. This is our first meeting.</div>
+    </div>
 
-    <details>
-        <summary>Recordings</summary>
-    <video controls width="640" height="360">
-        <source src="recording.mp4" type="video/mp4">
-        TL;DR, trying to attend Zoom meeting when you are late.
-    </video>
+    <div class="item important">
+        <h3>Important things to talk about next time</h3>
+        <b>Assign</b> <strong>responsibilities</strong>
+    </div>
 
-    <h3>Meeting Audio</h3>
-        <audio controls>
-            <source src="recording.m4a" type="audio/mpeg">
-        </audio>
-    </details>
+    <div class="item question">
+        <h3>Questions & Concerns</h3>
+        👽 points out he <i>might be</i> absent on campus the whole quarter.
+    </div>
+
+    </div>
+    
+    <section class="diagram">
+        <h3 category="diagramTitle">Diagrams we presented</h3>
+        <picture>
+            <img src="img.jpg" alt="It's just some random picture online">
+        </picture>
+    </section>
+
+    <section class="Motto">
+        <h2>Every CodeDiver should always remember</h2>
+        <h3>No matter what</h3>
+        <p>Liberty</p>
+        <p class="DEMOCRACY">Demo<a>cr</a>acy</p>
+        <p>Freedom</p>
+        <h3>Super Earth Ministry of Technology</h3>
+    </section>
   </body>
 </html>
