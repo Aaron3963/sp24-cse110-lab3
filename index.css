@@ -3,7 +3,12 @@
     --HD-yellow: #FFE80A;
   }
 
-
+@media (max-width: 750px) {
+    .items {
+        flex-direction: column;
+        width: 60%;
+    }
+}
 
 /* Universal selector */
 *.item{
@@ -78,34 +83,38 @@ body {
     color: color-mix(in srgb, black 50%, grey 50%);
 
     /* display #1 */
-    display: contents;
+    display: inline;
 }
 
 
 /* Display flexbox */
 .items {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
+    align-content: center;
+    justify-content: center; 
+    align-items: center;
+    margin: auto;
 }
 
 .item {
     /* Size */
     /* Relative unit #3 */
-    width: 50%;
+    width: 100%;
     height: 100%;
-    max-width: 20%;
-    max-height: 100%;
+    /* max-width: 20%;
+    max-height: 100%; */
 
     /* Short margin */
-    margin: auto auto 10px auto;
+    margin: 10px 10px 10px 10px;
 
     /* Short boarder */
     border: 2px dashed var(--HD-yellow) ;
     border-radius: 5px;
 
     /* Short padding */
-    padding: 10px 10px 10px 5%;
+    padding: 1% 1% 1% 1%;
 
     flex-basis: calc(33% - 20px);
 }
@@ -126,16 +135,40 @@ body {
 }
 
 .diagram{
+    margin: auto;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 50%;
+}
+
+h3 {
+    margin: auto;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: 0.2px rgb(255, 230, 4);
+    text-shadow: 0 2px 2px rgb(255, 230, 4); /* Cool shadow effect */
+}
+
+
+/* Descendent */
+picture img { 
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    height: auto;
 }
 
 .media {
     position: relative;
-    top: 50px;
+    bottom: -20px;
 
     width: 40%;
-    margin: auto auto 10px auto;
+    margin: 100px auto 10px auto;
 }
 
 /* ID selector */
@@ -143,16 +176,43 @@ body {
     color: green;
 }
 
-/*  */
-picture {
+.Motto{
     text-align: center;
 }
 
+/* Descendent selector*/
+.Motto > p{
+    width: 95%;
 
+    color: var(--HD-yellow);
+    font-size: 70px;
+}
 
+/* Sibling selector */
+p ~ h3{
+    font-size: 12px;
+    text-align: right;
+}
 
-@media (max-width: 500px) {
-    .title{
-        color: aqua;
+/* Adjacent Sibling selector */
+.Motto > p + h3 {
+    color: rgb(37, 138, 201);
+  }
+
+/* Combined selector */
+p.DEMOCRACY {
+    text-decoration: underline;
+}
+
+/* New selector */
+h2:has(+ h3) { 
+    color: orange;
+    margin: 50px 0 0.25rem 0;
+  }
+
+/* Nested selector */
+.Motto > p {
+    & > a{
+        text-decoration: overline;
     }
 }

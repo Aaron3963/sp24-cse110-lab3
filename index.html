@@ -3,7 +3,7 @@
   <head>
     <title>CodeDivers</title>
     <link rel="icon" type="image/x-icon" href="https://aaron3963.github.io/CSE110-Lab2/images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="index2.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
   <style>
     html {
     font-size: 16px;
-    color: black;
+    color: white;
   }
   </style>
   <body>
@@ -24,7 +24,7 @@
     <div class="items">
     <div class="item Attendance">
         <h3>Attendance</h3>
-        <ul>
+        <ul id="attList">
             <li>😅: Present</li>
             <li>👽: On Zoom</li>
             <li>🤓: Absent</li>
@@ -59,25 +59,20 @@
 
     </div>
     
-    <div class="diagram">
-        <h3>Diagrams we presented</h3>
+    <section class="diagram">
+        <h3 category="diagramTitle">Diagrams we presented</h3>
         <picture>
-            <img src="img.jpg" width="50%" alt="It's just some random picture online">
+            <img src="img.jpg" alt="It's just some random picture online">
         </picture>
-    </div>
-    
+    </section>
 
-    <details class="media">
-        <summary>Recordings</summary>
-    <video controls width="640" height="360">
-        <source src="recording.mp4" type="video/mp4">
-        TL;DR, trying to attend Zoom meeting when you are late.
-    </video>
-
-    <h3>Meeting Audio</h3>
-        <audio controls>
-            <source src="recording.m4a" type="audio/mpeg">
-        </audio>
-    </details>
+    <section class="Motto">
+        <h2>Every CodeDiver should always remember</h2>
+        <h3>No matter what</h3>
+        <p>Liberty</p>
+        <p class="DEMOCRACY">Demo<a>cr</a>acy</p>
+        <p>Freedom</p>
+        <h3>Super Earth Ministry of Technology</h3>
+    </section>
   </body>
 </html>
