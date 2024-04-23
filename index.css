@@ -146,8 +146,7 @@ h3 {
     margin: auto;
     width: 95%;
     justify-content: center;
-    align-items: center;
-    -webkit-text-stroke: 0.2px rgb(255, 230, 4);
+    align-items: center;    
     text-shadow: 0 2px 2px rgb(255, 230, 4); /* Cool shadow effect */
 }
 
@@ -211,7 +210,7 @@ h2:has(+ h3) {
   }
 
 /* Nested selector */
-.Motto > p {
+.Motto {
     & > a{
         text-decoration: overline;
     }
